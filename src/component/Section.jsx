@@ -24,7 +24,7 @@ const Section = () => {
 
         {/* Right Section - Product Grid */}
         <div className="w-full md:w-2/3 flex justify-center ">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 right-36 relative dm:right-7 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 right-36 relative dm:grid-cols-1 dm:left-1 ">
             {/* Collection Items */}
             {[
               { title: "Bridal Collection", img: "https://i.ibb.co/k2DmG99/IMG-2693s-copya-3-1.png" },

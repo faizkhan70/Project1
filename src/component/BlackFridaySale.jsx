@@ -6,7 +6,7 @@ const BlackFridaySale = () => {
       {/* Left Shoe Image */}
       <div className="w-full sm:w-1/3">
         <img
-          src="https://i.ibb.co/qMYdkMS/Rectangle-311-1.png"
+          src="https://i.ibb.co/FhvNwjL/Rectangle-311-1.png"
           alt="Left shoe collection"
           className="w-full h-auto object-cover"
         />

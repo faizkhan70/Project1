@@ -10,7 +10,7 @@ const Pre = () => {
   <div className="flex flex-col items-center lg:items-start text-center lg:text-left mb-6 lg:mb-0">
     <p className="text-sm font-semibold mb-4">100% Secure and Trusted Payment</p>
     <img 
-      src="src/assets/image 9 (1).png"  
+      src="https://i.ibb.co/7CnZP3V/image-9-1.png"  
       alt="Payment and Social Icons" 
       className="h-12 object-contain"
     />
