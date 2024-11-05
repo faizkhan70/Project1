@@ -7,7 +7,7 @@ const Section = () => {
     <div className="bg-white p-8">
       <section className="flex flex-col md:flex-row items-start justify-between">
         {/* Left Section - Sale Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-8 md:mb-0 ">
           <div className="relative">
             <img
               src="https://i.ibb.co/9Zqw6fC/Rectangle-302-1.png"
@@ -23,8 +23,8 @@ const Section = () => {
         </div>
 
         {/* Right Section - Product Grid */}
-        <div className="w-full md:w-2/3 flex justify-center ">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 right-36 relative dm:grid-cols-1 dm:left-1 ">
+        <div className="w-full md:w-2/3 flex justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full relative right-36 dm:right-0">
             {/* Collection Items */}
             {[
               { title: "Bridal Collection", img: "https://i.ibb.co/k2DmG99/IMG-2693s-copya-3-1.png" },
@@ -38,17 +38,19 @@ const Section = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className={`flex flex-col items-center justify-center p-6 shadow-md relative ${
+                className={`flex flex-col items-center justify-center p-4 shadow-md ${
                   lightGrayIndexes.includes(index) ? 'bg-[#EBEBEB]' : 'bg-gray-100'
                 }`}
-                style={{ height: '200px', width: '200px' }} // Increased box size
+                style={{ height: '0', paddingBottom: '100%', position: 'relative' }} // Makes it a square box
               >
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-32 h-32 object-cover mb-2"
-                />
-                <p className="text-center">{item.title}</p>
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-32 h-32 object-cover mb-2"
+                  />
+                  <p className="text-center">{item.title}</p>
+                </div>
               </div>
             ))}
           </div>
